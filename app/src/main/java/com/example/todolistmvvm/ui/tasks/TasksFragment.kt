@@ -21,6 +21,7 @@ import com.example.todolistmvvm.databinding.FragmentTasksBinding
 import com.example.todolistmvvm.util.onQueryTextChanged
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -33,6 +34,7 @@ private  val viewModel: TaskViewModel by viewModels()
 private lateinit var searchView: SearchView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
 

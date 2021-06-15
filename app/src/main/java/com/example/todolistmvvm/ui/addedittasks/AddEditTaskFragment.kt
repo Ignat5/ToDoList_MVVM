@@ -18,6 +18,10 @@ import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 
+/*
+big comment here
+ */
+
 @AndroidEntryPoint
 class AddEditTaskFragment: Fragment(R.layout.fragment_add_edit_task) {
 
